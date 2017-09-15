@@ -9,12 +9,9 @@
 # $Id:$
 #
 
-begin
-  require 'rubygems'
-  gem 'bio', '>= 1.1.0'
-rescue LoadError
-  require 'bio'
-end
+gem 'bio-shell'
+gem 'bio', '>=1.5.1'
+
 require 'bio/shell'
 
 # required to run commands (getseq, ls etc.)
