@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["staff@bioruby.org"]
 
   spec.summary       = %q{BioRuby Shell: interactive analysis environment for BioRuby}
-  spec.description   = %q{BioRuby Shell is a command-line based interacitve analysis enviroment for BioRuby open source bioinformatics library.}
+  spec.description   = %q{BioRuby Shell is a command line interface on BioRuby open source bioinformatics library. It provides easy-to-use analysis environment for bioinformatics.}
   spec.homepage      = "https://github.com/bioruby/bioruby-shell"
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
