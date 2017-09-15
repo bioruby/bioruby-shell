@@ -9,7 +9,7 @@ load Pathname.new(File.join(File.dirname(__FILE__),
 require 'test/unit'
 
 unit_test = File.join(File.dirname($0), "unit")
-func_test = File.join(File.dirname($0), "functional")
+#func_test = File.join(File.dirname($0), "functional")
 
 if !defined?(Test::Unit::AutoRunner) then
   # Ruby 1.9.1 does not have Test::Unit::AutoRunner
@@ -22,7 +22,7 @@ elsif defined?(Test::Unit::Color) then
   # workaround for test-unit-2.0.x
   r = Test::Unit::AutoRunner.new(true)
   r.to_run.push unit_test
-  r.to_run.push func_test
+  #r.to_run.push func_test
   r.process_args(ARGV)
   exit r.run
 
