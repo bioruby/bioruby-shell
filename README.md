@@ -51,7 +51,7 @@ to [rubygems.org](https://rubygems.org).
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at
-https://github.com/bioruby/bio-shell
+https://github.com/bioruby/bioruby-shell
 
 ## Cite
 
