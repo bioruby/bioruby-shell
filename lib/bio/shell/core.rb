@@ -7,6 +7,8 @@
 #
 #
 
+require 'readline' if RUBY_VERSION >= '3'
+
 module Bio::Shell::Core
 
   SHELLDIR = "shell"
