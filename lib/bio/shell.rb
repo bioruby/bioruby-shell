@@ -16,6 +16,7 @@ require 'pp'
 
 module Bio::Shell
 
+  require 'bio/shell/version'
   require 'bio/shell/setup'
   require 'bio/shell/irb'
   require 'bio/shell/web'
