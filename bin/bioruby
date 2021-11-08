@@ -9,9 +9,6 @@
 # $Id:$
 #
 
-gem 'bio-shell'
-gem 'bio', '>=1.5.1'
-
 require 'bio/shell'
 
 # required to run commands (getseq, ls etc.)
