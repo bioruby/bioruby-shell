@@ -7,6 +7,15 @@
 #
 #
 
+begin
+  require "reline"
+rescue LoadError
+end
+
+unless defined? ::Reline
+  require "readline"
+end
+
 module Bio::Shell::Core
 
   SHELLDIR = "shell"
@@ -100,6 +109,11 @@ end
 
 
 module Bio::Shell::Ghost
+
+  # prefer using Reline instead of Readline
+  if defined? ::Reline
+    Readline = ::Reline
+  end
 
   include Bio::Shell::Core
 
